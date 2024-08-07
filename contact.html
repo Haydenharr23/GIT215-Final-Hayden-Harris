@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badger Ski Resort | Contact</title>
+
+    <meta name="author" content="Hayden Harris"> <!-- Author meta tag -->
+    <meta name="description" content="Contact page for Badger Ski Resort"> <!-- Description meta tag -->
+    
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS stylesheet -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="hero">
+                <h1><a href="index.html">Badger Ski Resort</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Accommodations</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>  
+        </header>
+        <main>
+            <div class="contact-section">
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!</p>
+                    <img src="images/swiss-peak.jpg" alt="trees with water and Mountain peak" height="455" width="350">
+                </div>
+                
+                <div class="contact-form">
+                    <form action="/submit" method="post">
+                        <div class="form-group">
+                            <label for="full-name">*Full Name:</label>
+                            <input type="text" id="full-name" name="full-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">*Email Address:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">*Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label>*Preferred Contact Method:</label>
+                            <label for="contact-email">
+                                <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                                Email
+                            </label>
+                            <label for="contact-phone">
+                                <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                                Phone
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="comments">*Comments:</label>
+                            <textarea id="comments" name="comments" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright ©2023 - Badger Ski Resort</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </div>
+</body>
+</html>
